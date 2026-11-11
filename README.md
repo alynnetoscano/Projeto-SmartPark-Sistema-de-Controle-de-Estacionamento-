@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Projeto-SmartPark-Sistema-de-Controle-de-Estacionamento-
 # SmartPark — Sistema de Controle de Estacionamento
 
@@ -40,3 +41,69 @@ python main.py
 
 ## Configurações
 20 vagas · R$ 5,00/hora · 06h às 22h · permanência mínima de 1 hora.
+=======
+# SmartPark — Sistema de Controle de Estacionamento
+
+Projeto da **Fase 01** da disciplina de Programação Estruturada em Python.
+
+## Objetivo
+
+Controlar entradas e saídas de veículos, a ocupação das vagas e o faturamento de um estacionamento por meio de um programa de terminal.
+
+## Funcionalidades
+
+- Registrar entrada de veículos, respeitando o limite de 20 vagas.
+- Registrar saída com permanência inteira e positiva.
+- Calcular cobrança de R$ 5,00 por hora, com permanência mínima de uma hora.
+- Consultar vagas ocupadas, disponíveis e percentual de ocupação.
+- Consultar faturamento acumulado e média por saída.
+- Exibir relatório de movimentações.
+- Mostrar tabela de preços de 1 a 5 horas.
+- Encerrar com resumo de entradas, saídas e faturamento.
+
+## Requisitos
+
+- Python **3.10 ou superior**.
+- Nenhuma biblioteca externa é necessária.
+
+## Como executar
+
+1. Clique em **Code > Download ZIP** no GitHub.
+2. Extraia o arquivo ZIP.
+3. Abra a pasta extraída no PyCharm.
+4. Configure um interpretador Python 3.10 ou superior.
+5. Abra `main.py` e escolha **Run 'main'**.
+
+Ou, com o terminal aberto na pasta do projeto:
+
+```bash
+python main.py
+```
+
+Em alguns computadores Windows, também funciona `py main.py`.
+
+## Organização dos arquivos
+
+- `main.py` — menu principal e variáveis de controle do nosso projeto :).
+- `movimentacao.py` — regras de entrada e saída.
+- `financeiro.py` — cálculos e consultas de faturamento.
+- `relatorios.py` — relatórios de vagas e movimentações.
+- `config.py` — constantes e configurações.
+- `README.md` — documentação do projeto.
+- `.gitignore` — arquivos que não precisam ser publicados.
+
+## Configuração e observações
+
+- Capacidade: 20 vagas.
+- Tarifa: R$ 5,00 por hora.
+- Horário informado: 06h às 22h.
+- A aplicação não faz controle pelo relógio do computador.
+- Não registra placas nem horários individuais.
+- Os dados ficam na memória e são reiniciados quando o programa é aberto novamente.
+
+## Integrantes 
+
+- [ALYNNE TOSCANO VASCONCELOS]
+- [GUSTAVO]
+- [MATHEUS]
+>>>>>>> 8a0a5ec (subindo arquivos)
