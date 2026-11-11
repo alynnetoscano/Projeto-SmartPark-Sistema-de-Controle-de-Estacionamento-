@@ -5,9 +5,9 @@ Projeto Fase 01 da disciplina **Programação Estruturada em Python**.
 Sistema de terminal que controla entrada e saída de veículos, ocupação das vagas, cobrança e faturamento.
 
 ## Integrantes
-- Alynne (escreva o nome completo)
-- Gustavo (escreva o nome completo)
-- Matheus (escreva o nome completo)
+- Alynne 
+- Gustavo 
+- Matheus 
 
 ## Funcionalidades
 - Registrar entrada de veículo (bloqueia quando lotado)
