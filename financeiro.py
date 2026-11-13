@@ -1,4 +1,4 @@
-"""CobranÃ§as, comprovantes e faturamento."""
+"""Cobranças, comprovantes e faturamento."""
 
 from config import TARIFA_HORA, PERMANENCIA_MINIMA, HORA_ABERTURA, HORA_FECHAMENTO
 
@@ -6,12 +6,10 @@ from config import TARIFA_HORA, PERMANENCIA_MINIMA, HORA_ABERTURA, HORA_FECHAMEN
 def formatar_reais(valor):
     return f"R$ {valor:.2f}".replace(".", ",")
 
-
 def calcular_cobranca(horas):
     if horas < PERMANENCIA_MINIMA:
         horas = PERMANENCIA_MINIMA
     return float(horas) * TARIFA_HORA
-
 
 def mostrar_comprovante(horas, valor):
     print("\n========== COMPROVANTE ==========")
@@ -20,7 +18,6 @@ def mostrar_comprovante(horas, valor):
     print(f"Valor a pagar: {formatar_reais(valor)}")
     print("Saida registrada com sucesso!")
     print("=================================")
-
 
 def consultar_faturamento(faturamento, saidas):
     if saidas == 0:
@@ -37,7 +34,7 @@ def consultar_faturamento(faturamento, saidas):
 
 def mostrar_tabela_precos():
     print("\n========== TABELA DE PREÇOS ==========")
-    print(f"Funcionamento: {HORA_ABERTURA:02d}h Ã s {HORA_FECHAMENTO:02d}h")
+    print(f"Funcionamento: {HORA_ABERTURA:02d}hora(s) {HORA_FECHAMENTO:02d}h")
     print(f"Tarifa por hora: {formatar_reais(TARIFA_HORA)}")
     print(f"Permanencia minima: {PERMANENCIA_MINIMA} hora(s)")
 

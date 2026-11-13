@@ -2,9 +2,7 @@
 .venv/
 venv/
 
-# Configuracoes locais do PyCharm
 .idea/
 
-# Arquivos temporarios Python
 __pycache__/
 *.pycssss

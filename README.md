@@ -6,9 +6,9 @@ Projeto Fase 01 da disciplina **Programação Estruturada em Python**.
 Sistema de terminal que controla entrada e saída de veículos, ocupação das vagas, cobrança e faturamento.
 
 ## Integrantes
-- Alynne 
-- Gustavo 
-- Matheus 
+- Alynne Toscano Vasconcelos
+- Gustavo Oliveira Calvalcante
+- Matheus Alves Azevedo Calvalcanti Machado
 
 ## Funcionalidades
 - Registrar entrada de veículo (bloqueia quando lotado)
@@ -25,7 +25,7 @@ Sistema de terminal que controla entrada e saída de veículos, ocupação das v
 
 ## Como executar
 ```bash
-git clone https://github.com/SEU_USUARIO/smartpark-python.git
+git clone https://github.com/alynnetoscano/Projeto-SmartPark-Sistema-de-Controle-de-Estacionamento-.git
 cd smartpark-python
 python main.py
 ```
@@ -101,9 +101,4 @@ Em alguns computadores Windows, também funciona `py main.py`.
 - Não registra placas nem horários individuais.
 - Os dados ficam na memória e são reiniciados quando o programa é aberto novamente.
 
-## Integrantes 
-
-- [ALYNNE TOSCANO VASCONCELOS]
-- [GUSTAVO]
-- [MATHEUS]
 >>>>>>> 8a0a5ec (subindo arquivos)

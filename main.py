@@ -1,7 +1,7 @@
 
-# SMARTPARK - SISTEMA DE CONTROLE DE ESTACIONAMENTO
+# SMARTPARK - SISTEMA DE CONTROLE DE ESTACIONAMENTO| ESPERO QUE GOSTE PROFESOR THIAGO| De Alynne, Gustavo e Matheus
 
-# IMPORTAÇÃO DOS ARQUIVOS :)
+# IMPORTAÇÃO DOS ARQUIVOS PROFESSOR:)
 import movimentacao
 import relatorios as rel
 
@@ -37,14 +37,13 @@ def boas_vindas():
     print("            SMARTPARK")
     print("     CONTROLE DE ESTACIONAMENTO")
     print(AMARELO + "========================================" + NORMAL)
-    nome = input("\nOlá! Digite seu nome: ")
+    nome = input("\nOlá bom dia/tarde, digite seu nome, por favor: ")
     print(AMARELO + "\n========================================" + NORMAL)
     print(f"Olá, {nome}! Seja bem-vindo(a) ao SmartPark!")
     print("Facilitando a sua rotina.")
     print(AMARELO + "========================================" + NORMAL)
 
     return nome
-
 
 # MENU PRINCIPAL
 def mostrar_menu(nome, ocupadas):
@@ -67,7 +66,6 @@ def mostrar_menu(nome, ocupadas):
     print("5 - Relatório de movimentações")
     print("6 - Consultar tabela de preços")
     print("0 - Encerrar sistema")
-
     print(AMARELO + "--------------------------------------" + NORMAL)
 
 
@@ -79,9 +77,7 @@ def executar():
     faturamento = FATURAMENTO_INICIAL
     funcionando = True
 
-
     nome = boas_vindas()
-
 
     while funcionando:
 
@@ -91,7 +87,7 @@ def executar():
             opcao = int(input("\nEscolha uma opção de 0 a 6: "))
 
         except ValueError:
-            print(VERMELHO + "\nERRO! Por favor cliete um número valido :)." + NORMAL)
+            print(VERMELHO + "\nERRO! Por favor digite um número valido :)." + NORMAL)
 
         else:
             if 0 <= opcao <= 6:
@@ -115,16 +111,10 @@ def executar():
                             faturamento += valor
 
                             mostrar_comprovante(horas, valor)
-
-                    # CONSULTAR VAGAS
                     case 3:
                         rel.consultar_vagas(ocupadas)
-
-                    # CONSULTAR FATURAMENTO
                     case 4:
                         consultar_faturamento(faturamento, saidas)
-
-                    # RELATÓRIO DE MOVIMENTAÇÕES
                     case 5:
                         rel.relatorio_movimentacoes(
                             entradas,
@@ -132,12 +122,8 @@ def executar():
                             ocupadas,
                             faturamento
                         )
-
-                    # TABELA DE PREÇOS
                     case 6:
                         mostrar_tabela_precos()
-
-                    # ENCERRAR SISTEMA
                     case 0:
                         print(AMARELO + "\n========================================" + NORMAL)
                         print("             RESUMO FINAL")
@@ -150,14 +136,9 @@ def executar():
                         print("Sistema encerrado com sucesso.")
                         print(AMARELO + "========================================" + NORMAL)
                         funcionando = False
-
             else:
                 print(VERMELHO + "\nOPÇÃO INVÁLIDA! ESCOLHA DE 0 A 6." + NORMAL)
-
         finally:
             print(AMARELO + "----------------------------------------" + NORMAL)
-
-
-# INICIAR O PROGRAMA
 if __name__ == "__main__":
     executar()

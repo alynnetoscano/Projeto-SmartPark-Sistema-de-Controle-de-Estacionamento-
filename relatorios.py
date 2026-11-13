@@ -1,4 +1,4 @@
-"""RelatORIOS de ocupaçao e movimentaçao."""
+"""Relatorios de ocupaçao e movimentaçao."""
 
 from config import CAPACIDADE_MAXIMA
 from financeiro import formatar_reais
@@ -23,14 +23,13 @@ def consultar_vagas(ocupadas):
     print(f"Situação: {situacao}")
     print("=======================================")
 
-
 def relatorio_movimentacoes(entradas, saidas, ocupadas, faturamento):
     disponiveis = CAPACIDADE_MAXIMA - ocupadas
 
     print("\n========== RELATORIO SMARTPARK ==========")
     print(f"Total de entradas: {entradas}")
-    print(f"Total de saidas: {saidas}")
+    print(f"Total de saídas: {saidas}")
     print(f"Veiculos estacionados: {ocupadas}")
-    print(f"Vagas disponiveis: {disponiveis}")
+    print(f"Vagas disponíveis: {disponiveis}")
     print(f"Faturamento: {formatar_reais(faturamento)}")
     print("=========================================")

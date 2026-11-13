@@ -4,7 +4,6 @@ from config import CAPACIDADE_MAXIMA
 
 
 def registrar_entrada(ocupadas):
-    """Retorna True quando a entrada pode ser realizada."""
     if not (ocupadas >= 0 and ocupadas < CAPACIDADE_MAXIMA):
         print("\nEntrada recusada: estacionamento lotado ou ocupação invalida.")
         return False
@@ -14,9 +13,7 @@ def registrar_entrada(ocupadas):
     print(f"Vagas disponiveis: {disponiveis}")
     return True
 
-
 def registrar_saida(ocupadas):
-    """Solicita horas validas e devolve 0 se o estacionamento estiver vazio."""
     if ocupadas <= 0 or ocupadas > CAPACIDADE_MAXIMA:
         print("\nSaida recusada: não há veiculos para retirar.")
         return 0
