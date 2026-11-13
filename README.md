@@ -20,8 +20,9 @@ Sistema de terminal que controla entrada e saída de veículos, ocupação das v
 - Encerramento com resumo final
 
 ## Requisitos
-- Python 3.10 ou superior (usa `match...case`)
+- Python 3.15.2 ou superior (usa `match...case`)
 - Nenhuma biblioteca externa
+- Utilizei professor a versão 3.15.2gi
 
 ## Como executar
 ```bash
